@@ -115,7 +115,7 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iters, cost_function, gradient
                   f"dj_dw: {dj_dw: 0.3e}, dj_db: {dj_db: 0.3e}  ",
                   f"w: {w: 0.3e}, b:{b: 0.5e}")
 
-    return w, b, J_history, p_history  # return w and J,w history for graphing
+    return w, b, J_history, p_history  # return w and J, w history for graphing
 
 
 def plt_divergence(p_hist, J_hist, x_train, y_train):
@@ -136,7 +136,7 @@ def plt_divergence(p_hist, J_hist, x_train, y_train):
     # ===============
     ax = fig.add_subplot(gs[:2], )
 
-    # Print w vs cost to see minimum
+    # Print w vs. cost to see minimum
     fix_b = 100
     w_array = np.arange(-70000, 70000, 1000)
     cost = np.zeros_like(w_array)

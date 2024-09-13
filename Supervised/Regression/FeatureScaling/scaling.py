@@ -54,7 +54,7 @@ ax[2].set_xlabel(X_features[0]);
 ax[0].set_ylabel(X_features[3]);
 ax[2].set_title(r"Z-score normalized")
 ax[2].axis('equal')
-plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+plt.tight_layout(rect=[0.00, 0.03, 1.00, 0.95])
 fig.suptitle("distribution of features before, during, after normalization")
 plt.show()
 
